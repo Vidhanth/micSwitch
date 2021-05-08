@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */; };
+		7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B8D1FBE2B36009762CE /* Preferences.xib */; };
+		7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B991FBE36A0009762CE /* InfoPlist.strings */; };
+		7C724BA21FBE4433009762CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C724BA11FBE4433009762CE /* AppDelegate.m */; };
+		7C724BA41FBE4433009762CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C724BA31FBE4433009762CE /* Assets.xcassets */; };
+		7C724BA71FBE4433009762CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C724BA51FBE4433009762CE /* MainMenu.xib */; };
+		7C724BAA1FBE4433009762CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C724BA91FBE4433009762CE /* main.m */; };
+		7C724BAF1FBE4597009762CE /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C724B9E1FBE4433009762CE /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C78BD651FBBB40300735F37 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */; };
+		7C78BD6D1FBBBA7700735F37 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD6C1FBBBA7700735F37 /* Preferences.swift */; };
+		7C78BD8A1FBC569D00735F37 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78BD891FBC568800735F37 /* ServiceManagement.framework */; };
+		7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */; };
+		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
+		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
+		7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187F81FB9B7230015D41D /* AudioUtils.swift */; };
+		7DC226512646B440001217F7 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC226502646B440001217F7 /* Sounds.swift */; };
+		7DC226522646B440001217F7 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC226502646B440001217F7 /* Sounds.swift */; };
+		7DC226552646B710001217F7 /* Mutesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7DC226532646B710001217F7 /* Mutesound.wav */; };
+		7DC226562646B710001217F7 /* Mutesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7DC226532646B710001217F7 /* Mutesound.wav */; };
+		7DC226572646B710001217F7 /* Unmutesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7DC226542646B710001217F7 /* Unmutesound.wav */; };
+		7DC226582646B710001217F7 /* Unmutesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7DC226542646B710001217F7 /* Unmutesound.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C78BD871FBC55FC00735F37 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				7C724BAF1FBE4597009762CE /* Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		7C724B891FBDECC6009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		7C724B8C1FBE2B36009762CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		7C724B8F1FBE2B56009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Preferences.strings; sourceTree = "<group>"; };
+		7C724B981FBE36A0009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C724B9E1FBE4433009762CE /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C724BA01FBE4433009762CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C724BA11FBE4433009762CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C724BA31FBE4433009762CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C724BA61FBE4433009762CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7C724BA81FBE4433009762CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C724BA91FBE4433009762CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C724BAB1FBE4433009762CE /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
+		7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		7C78BD661FBBB6AD00735F37 /* micSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "micSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C78BD6C1FBBBA7700735F37 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		7C78BD891FBC568800735F37 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		7CC187E71FB9A63D0015D41D /* micSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = micSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CC187EC1FB9A63D0015D41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC187EF1FB9A63D0015D41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7CC187F11FB9A63D0015D41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = micSwitch.entitlements; sourceTree = "<group>"; };
+		7CC187F81FB9B7230015D41D /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
+		7DC226502646B440001217F7 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		7DC226532646B710001217F7 /* Mutesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mutesound.wav; sourceTree = "<group>"; };
+		7DC226542646B710001217F7 /* Unmutesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unmutesound.wav; sourceTree = "<group>"; };
+		95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-micSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C724B9B1FBE4433009762CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC187E41FB9A63D0015D41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */,
+				7C78BD8A1FBC569D00735F37 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493B02A16B208425F81C1AA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */,
+				18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C724B9F1FBE4433009762CE /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				7C724BA01FBE4433009762CE /* AppDelegate.h */,
+				7C724BA11FBE4433009762CE /* AppDelegate.m */,
+				7C724BA31FBE4433009762CE /* Assets.xcassets */,
+				7C724BA51FBE4433009762CE /* MainMenu.xib */,
+				7C724BA81FBE4433009762CE /* Info.plist */,
+				7C724BA91FBE4433009762CE /* main.m */,
+				7C724BAB1FBE4433009762CE /* Launcher.entitlements */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		7C78BD821FBC551E00735F37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CC187EE1FB9A63D0015D41D /* MainMenu.xib */,
+				7C724B8D1FBE2B36009762CE /* Preferences.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C78BD831FBC553700735F37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7C78BD841FBC554A00735F37 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C78BD6C1FBBBA7700735F37 /* Preferences.swift */,
+				7CC187F81FB9B7230015D41D /* AudioUtils.swift */,
+				7DC226502646B440001217F7 /* Sounds.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7C78BD861FBC558000735F37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C724B991FBE36A0009762CE /* InfoPlist.strings */,
+				7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */,
+				7CC187F11FB9A63D0015D41D /* Info.plist */,
+				7C78BD661FBBB6AD00735F37 /* micSwitch-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CC187DE1FB9A63D0015D41D = {
+			isa = PBXGroup;
+			children = (
+				7CC187E91FB9A63D0015D41D /* micSwitch */,
+				7C724B9F1FBE4433009762CE /* Launcher */,
+				7CC187E81FB9A63D0015D41D /* Products */,
+				493B02A16B208425F81C1AA5 /* Pods */,
+				CC7DF16E3BF4F2D7794D84F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC187E81FB9A63D0015D41D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC187E71FB9A63D0015D41D /* micSwitch.app */,
+				7C724B9E1FBE4433009762CE /* Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC187E91FB9A63D0015D41D /* micSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */,
+				7DC226532646B710001217F7 /* Mutesound.wav */,
+				7DC226542646B710001217F7 /* Unmutesound.wav */,
+				7C78BD841FBC554A00735F37 /* Classes */,
+				7C78BD831FBC553700735F37 /* ViewControllers */,
+				7C78BD821FBC551E00735F37 /* Views */,
+				7C78BD861FBC558000735F37 /* Supporting Files */,
+				7CC187EC1FB9A63D0015D41D /* Assets.xcassets */,
+			);
+			path = micSwitch;
+			sourceTree = "<group>";
+		};
+		CC7DF16E3BF4F2D7794D84F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C78BD891FBC568800735F37 /* ServiceManagement.framework */,
+				95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C724B9D1FBE4433009762CE /* Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C724BAC1FBE4433009762CE /* Build configuration list for PBXNativeTarget "Launcher" */;
+			buildPhases = (
+				7C724B9A1FBE4433009762CE /* Sources */,
+				7C724B9B1FBE4433009762CE /* Frameworks */,
+				7C724B9C1FBE4433009762CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Launcher;
+			productName = Launcher;
+			productReference = 7C724B9E1FBE4433009762CE /* Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CC187E61FB9A63D0015D41D /* micSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC187F51FB9A63D0015D41D /* Build configuration list for PBXNativeTarget "micSwitch" */;
+			buildPhases = (
+				6D8EF30BFBF9AA6F41BF5C2E /* [CP] Check Pods Manifest.lock */,
+				7CC187E31FB9A63D0015D41D /* Sources */,
+				7CC187E41FB9A63D0015D41D /* Frameworks */,
+				7CC187E51FB9A63D0015D41D /* Resources */,
+				034464F150C5D7BD83B63A4C /* [CP] Embed Pods Frameworks */,
+				BD79004F3C22C28F8F90F0B9 /* [CP] Copy Pods Resources */,
+				7C78BD871FBC55FC00735F37 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = micSwitch;
+			productName = micSwitch;
+			productReference = 7CC187E71FB9A63D0015D41D /* micSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC187DF1FB9A63D0015D41D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Denis Stanishevskiy";
+				TargetAttributes = {
+					7C724B9D1FBE4433009762CE = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1250;
+						ProvisioningStyle = Automatic;
+					};
+					7CC187E61FB9A63D0015D41D = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7CC187E21FB9A63D0015D41D /* Build configuration list for PBXProject "micSwitch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 7CC187DE1FB9A63D0015D41D;
+			productRefGroup = 7CC187E81FB9A63D0015D41D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC187E61FB9A63D0015D41D /* micSwitch */,
+				7C724B9D1FBE4433009762CE /* Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C724B9C1FBE4433009762CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C724BA41FBE4433009762CE /* Assets.xcassets in Resources */,
+				7DC226562646B710001217F7 /* Mutesound.wav in Resources */,
+				7DC226582646B710001217F7 /* Unmutesound.wav in Resources */,
+				7C724BA71FBE4433009762CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC187E51FB9A63D0015D41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */,
+				7DC226552646B710001217F7 /* Mutesound.wav in Resources */,
+				7DC226572646B710001217F7 /* Unmutesound.wav in Resources */,
+				7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */,
+				7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */,
+				7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034464F150C5D7BD83B63A4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8EF30BFBF9AA6F41BF5C2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD79004F3C22C28F8F90F0B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C724B9A1FBE4433009762CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC226522646B440001217F7 /* Sounds.swift in Sources */,
+				7C724BAA1FBE4433009762CE /* main.m in Sources */,
+				7C724BA21FBE4433009762CE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC187E31FB9A63D0015D41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */,
+				7C78BD6D1FBBBA7700735F37 /* Preferences.swift in Sources */,
+				7DC226512646B440001217F7 /* Sounds.swift in Sources */,
+				7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */,
+				7C78BD651FBBB40300735F37 /* PreferencesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C724B8D1FBE2B36009762CE /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724B8C1FBE2B36009762CE /* Base */,
+				7C724B8F1FBE2B56009762CE /* ru */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		7C724B991FBE36A0009762CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724B981FBE36A0009762CE /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7C724BA51FBE4433009762CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724BA61FBE4433009762CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7CC187EE1FB9A63D0015D41D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC187EF1FB9A63D0015D41D /* Base */,
+				7C724B891FBDECC6009762CE /* ru */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C724BAD1FBE4433009762CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7JGW76MBK5;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7C724BAE1FBE4433009762CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7JGW76MBK5;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7CC187F31FB9A63D0015D41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CC187F41FB9A63D0015D41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		7CC187F61FB9A63D0015D41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7JGW76MBK5;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "micSwitch/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "micSwitch/Supporting Files/micSwitch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7CC187F71FB9A63D0015D41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7JGW76MBK5;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "micSwitch/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "micSwitch/Supporting Files/micSwitch-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C724BAC1FBE4433009762CE /* Build configuration list for PBXNativeTarget "Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C724BAD1FBE4433009762CE /* Debug */,
+				7C724BAE1FBE4433009762CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC187E21FB9A63D0015D41D /* Build configuration list for PBXProject "micSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC187F31FB9A63D0015D41D /* Debug */,
+				7CC187F41FB9A63D0015D41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC187F51FB9A63D0015D41D /* Build configuration list for PBXNativeTarget "micSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC187F61FB9A63D0015D41D /* Debug */,
+				7CC187F71FB9A63D0015D41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CC187DF1FB9A63D0015D41D /* Project object */;
+}
