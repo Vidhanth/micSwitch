@@ -22,6 +22,10 @@
 		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
 		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
 		7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187F81FB9B7230015D41D /* AudioUtils.swift */; };
+		7D0346442646BFE100FDBF20 /* PTTOff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D0346422646BFE100FDBF20 /* PTTOff.wav */; };
+		7D0346452646BFE100FDBF20 /* PTTOff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D0346422646BFE100FDBF20 /* PTTOff.wav */; };
+		7D0346462646BFE100FDBF20 /* PTTOn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D0346432646BFE100FDBF20 /* PTTOn.wav */; };
+		7D0346472646BFE100FDBF20 /* PTTOn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D0346432646BFE100FDBF20 /* PTTOn.wav */; };
 		7DC226512646B440001217F7 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC226502646B440001217F7 /* Sounds.swift */; };
 		7DC226522646B440001217F7 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC226502646B440001217F7 /* Sounds.swift */; };
 		7DC226552646B710001217F7 /* Mutesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7DC226532646B710001217F7 /* Mutesound.wav */; };
@@ -68,6 +72,8 @@
 		7CC187F11FB9A63D0015D41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = micSwitch.entitlements; sourceTree = "<group>"; };
 		7CC187F81FB9B7230015D41D /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
+		7D0346422646BFE100FDBF20 /* PTTOff.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PTTOff.wav; sourceTree = "<group>"; };
+		7D0346432646BFE100FDBF20 /* PTTOn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PTTOn.wav; sourceTree = "<group>"; };
 		7DC226502646B440001217F7 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		7DC226532646B710001217F7 /* Mutesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mutesound.wav; sourceTree = "<group>"; };
 		7DC226542646B710001217F7 /* Unmutesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unmutesound.wav; sourceTree = "<group>"; };
@@ -180,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */,
+				7D0346422646BFE100FDBF20 /* PTTOff.wav */,
+				7D0346432646BFE100FDBF20 /* PTTOn.wav */,
 				7DC226532646B710001217F7 /* Mutesound.wav */,
 				7DC226542646B710001217F7 /* Unmutesound.wav */,
 				7C78BD841FBC554A00735F37 /* Classes */,
@@ -296,6 +304,8 @@
 				7C724BA41FBE4433009762CE /* Assets.xcassets in Resources */,
 				7DC226562646B710001217F7 /* Mutesound.wav in Resources */,
 				7DC226582646B710001217F7 /* Unmutesound.wav in Resources */,
+				7D0346452646BFE100FDBF20 /* PTTOff.wav in Resources */,
+				7D0346472646BFE100FDBF20 /* PTTOn.wav in Resources */,
 				7C724BA71FBE4433009762CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +316,9 @@
 			files = (
 				7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */,
 				7DC226552646B710001217F7 /* Mutesound.wav in Resources */,
+				7D0346462646BFE100FDBF20 /* PTTOn.wav in Resources */,
 				7DC226572646B710001217F7 /* Unmutesound.wav in Resources */,
+				7D0346442646BFE100FDBF20 /* PTTOff.wav in Resources */,
 				7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */,
 				7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */,
 				7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */,
@@ -585,11 +597,13 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7JGW76MBK5;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "micSwitch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -609,11 +623,13 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7JGW76MBK5;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "micSwitch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

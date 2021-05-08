@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             withDefaultsKey: Preferences.preferenceMuteShortcut,
             toAction: {
                 if Preferences.walkieTalkieMode {
+                    Sounds.playSounds(soundfile: "PTTOn.wav")
                     Audio.micMuted = false
                 } else {
                     Audio.toggleMicMute()
@@ -32,6 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             },
             onKeyUp: {
                 if Preferences.walkieTalkieMode {
+                    Sounds.playSounds(soundfile: "PTTOff.wav")
                     Audio.micMuted = true
                 }
             })
