@@ -66,11 +66,14 @@ struct Audio {
     }
     
     static func toggleMicMute() {
-        micMuted = !micMuted
         if micMuted {
-            Sounds.playSounds(soundfile: "Mutesound.wav")
-        } else {
             Sounds.playSounds(soundfile: "Unmutesound.wav")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                micMuted = false
+            }
+        } else {
+            micMuted = true
+            Sounds.playSounds(soundfile: "Mutesound.wav")
         }
     }
     

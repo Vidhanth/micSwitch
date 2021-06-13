@@ -26,15 +26,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             toAction: {
                 if Preferences.walkieTalkieMode {
                     Sounds.playSounds(soundfile: "PTTOn.wav")
-                    Audio.micMuted = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        Audio.micMuted = false
+                    }
                 } else {
-                    Audio.toggleMicMute()
+                    Audio.toggleMicMute();
                 }
             },
             onKeyUp: {
                 if Preferences.walkieTalkieMode {
-                    Sounds.playSounds(soundfile: "PTTOff.wav")
                     Audio.micMuted = true
+                    Sounds.playSounds(soundfile: "PTTOff.wav")
                 }
             })
     }
