@@ -70,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func updateMicStatus() {
         guard let button = statusItem.button else { return }
-        button.image = NSImage(named: NSImage.Name(Audio.micMuted ? "micOff" : "micOn"))
+        button.image = NSImage(named: Audio.micMuted ? "micOff" : "micOn")
     }
 
     private var preferences: PreferencesViewController?

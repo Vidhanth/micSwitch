@@ -10,7 +10,7 @@ import Cocoa
 
 class PreferencesViewController: NSViewController {
     static func newInstance() -> PreferencesViewController {
-        return PreferencesViewController(nibName: NSNib.Name(rawValue: "Preferences"), bundle: nil)
+        return PreferencesViewController(nibName: "Preferences", bundle: nil)
     }
     
     @IBOutlet weak var shortcutView: MASShortcutView!
