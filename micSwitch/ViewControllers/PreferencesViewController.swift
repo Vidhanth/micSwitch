@@ -15,6 +15,7 @@ class PreferencesViewController: NSViewController {
     
     @IBOutlet weak var shortcutView: MASShortcutView!
     @IBOutlet weak var walkieTalkieMode: NSButton!
+    @IBOutlet weak var playSound: NSButton!
     @IBOutlet weak var launchAtLogin: NSButton!
     
     override func viewDidLoad() {
@@ -22,11 +23,16 @@ class PreferencesViewController: NSViewController {
         
         shortcutView.associatedUserDefaultsKey = Preferences.preferenceMuteShortcut
         walkieTalkieMode.state = Preferences.walkieTalkieMode ? .on : .off
+        playSound.state = Preferences.playSound ? .on : .off
         launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
     }
     
     @IBAction func walkieTalkieModeChanged(_ sender: Any) {
         Preferences.walkieTalkieMode = walkieTalkieMode.state == .on
+    }
+    
+    @IBAction func playSoundChanged(_ sender: Any) {
+        Preferences.playSound = playSound.state == .on
     }
     
     @IBAction func launchAtLoginChanged(_ sender: Any) {

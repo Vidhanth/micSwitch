@@ -25,8 +25,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             withDefaultsKey: Preferences.preferenceMuteShortcut,
             toAction: {
                 if Preferences.walkieTalkieMode {
-                    Sounds.playSounds(soundfile: "PTTOn.wav")
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    if Preferences.playSound {
+                        Sounds.playSounds(soundfile: "PTTOn.wav")
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            Audio.micMuted = false
+                        }
+                    } else {
                         Audio.micMuted = false
                     }
                 } else {
@@ -36,7 +40,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             onKeyUp: {
                 if Preferences.walkieTalkieMode {
                     Audio.micMuted = true
-                    Sounds.playSounds(soundfile: "PTTOff.wav")
+                    if Preferences.playSound {
+                        Sounds.playSounds(soundfile: "PTTOff.wav")
+                    }
                 }
             })
     }

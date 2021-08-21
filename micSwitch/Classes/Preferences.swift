@@ -15,6 +15,11 @@ class Preferences {
         set { UserDefaults.standard.set(newValue, forKey: Preferences.preferenceWalkieTalkieMode) }
     }
     
+    static var playSound: Bool {
+        get { return UserDefaults.standard.bool(forKey: Preferences.preferencePlaySound) }
+        set { UserDefaults.standard.set(newValue, forKey: Preferences.preferencePlaySound) }
+    }
+    
     static var launchAtLogin: Bool {
         get {
             guard let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]])
@@ -30,6 +35,7 @@ class Preferences {
         }
     }
     
+    static let preferencePlaySound = "playSound"
     static let preferenceMuteShortcut = "muteShortcut"
     static let preferenceWalkieTalkieMode = "walkieTalkieMode"
     static let laucherBundleId = "dstd.github.com.micSwitch.Launcher"
